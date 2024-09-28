@@ -15,7 +15,7 @@ const Welcome = () => {
         </div>
         {/* message */}
         <div className="w-3/4 relative z-10">
-          <p className="text-[3.6rem] -z-0 text-gray-800 font-serif animate__animated animate__slideInDown xl:text-[3rem]">
+          <p className="text-[3.6rem] text-center -z-0 text-gray-800 font-serif animate__animated animate__slideInDown xl:text-[3rem]">
             Welcome to Your Dream Space
           </p>
           <p className="text-[1.5rem] font-serif text-orange-800 text-center">
