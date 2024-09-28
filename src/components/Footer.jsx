@@ -4,15 +4,9 @@ import logo from "../assets/logo.png";
 const Footer = () => {
   return (
     <>
-      <div className="bg-gray-700 p-[2rem] flex flex-row justify-evenly gap-x-[2rem]">
-        <img src={logo} />
+      <div className="bg-gray-700 p-[2rem] flex flex-row justify-between items-center gap-x-[2rem]">
+        <img className=" w-[10%]" src={logo} />
         <div>
-          <p className="text-white text-[1.5rem]">
-            At Aura Projects, we turn your spaces into captivating environments
-            that blend functionality with aesthetic appeal. Our expert designers
-            are dedicated to crafting interiors that reflect your personality
-            and lifestyle, creating a unique aura in every room.
-          </p>
           <div className="flex flex-row items-center justify-end gap-x-[2rem]">
             <div className="flex items-center justify-end gap-x-[2rem]">
               <a href="https://www.instagram.com/aura_interiors6?igsh=Ynd4MmR4bnFoYm0=">
