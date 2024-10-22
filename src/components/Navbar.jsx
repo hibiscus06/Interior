@@ -12,17 +12,17 @@ const Navbar = () => {
       </div>
       {/* Left Side - Navigation Links */}
       <div className="flex gap-6 items-center">
-        <Link to="/projects" className="text-white hover:text-gray-300">
-          Projects
+        <Link to="/about" className="text-white hover:text-gray-300">
+          About
         </Link>
         <Link to="/designs" className="text-white hover:text-gray-300">
           Designs
         </Link>
-        <Link to="/about" className="text-white hover:text-gray-300">
-          About
+        <Link to="/projects" className="text-white hover:text-gray-300">
+          Projects
         </Link>
         <Link to="/contact" className="text-white hover:text-gray-300">
-          Contact Us
+          Contact
         </Link>
       </div>
     </div>
