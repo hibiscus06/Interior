@@ -28,6 +28,10 @@ const router = createBrowserRouter([
     path: "/designs",
     element: <Designs />,
   },
+  {
+    path: "/designs/:category",
+    element: <DesignsCategory />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(

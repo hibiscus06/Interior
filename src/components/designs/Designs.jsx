@@ -37,8 +37,13 @@ import img173 from "../../assets/designs/173.png";
 import img174 from "../../assets/designs/174.png";
 import { Carousel } from "@material-tailwind/react";
 import Footer from "../Footer";
+import { Link } from "react-router-dom";
 
 const Designs = () => {
+  const [dropDown, setDropDown] = useState("false");
+  const toggleDropdown = () => {
+    setDropDown(!dropDown);
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -145,9 +150,42 @@ const Designs = () => {
           <p className="text-[3rem] md:text-[4rem] lg:text-[6rem] font-serif text-orange-800 animate__animated animate__fadeInLeft">
             Interior Designs
           </p>
-          <p className="text-gray-700 font-serif text-[1rem] md:text-[1.5rem] lg:text-[1.8rem]">
+          <p className="text-gray-700 font-serif text-[1rem] md:text-[1.8rem] lg:text-[2.0rem]">
             Get inspired to build your space.
           </p>
+          <div className="relative inline-block mt-[0.5rem]">
+            {/* Button */}
+            <button
+              onClick={toggleDropdown}
+              className="border-2 bg-orange-800 text-white font-serif rounded-lg text-[1.7rem] p-[0.3rem] flex items-center justify-between"
+            >
+              Designs
+              <i className="fa-solid fa-caret-down fa-lg text-white p-[0.2rem]"></i>
+            </button>
+
+            {/* Dropdown options */}
+            {dropDown && (
+              <ul className="absolute bg-white text-gray-800 border-2 border-orange-800 rounded-lg mt-[0.5rem] shadow-lg z-10">
+                <Link to="design/dining">
+                  <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
+                    Dining
+                  </li>
+                </Link>
+                <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
+                  Living Room
+                </li>
+                <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
+                  Ceiling
+                </li>
+                <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
+                  Bedroom
+                </li>
+                <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
+                  Kitchen
+                </li>
+              </ul>
+            )}
+          </div>
         </div>
 
         <div className="flex flex-col items-center px-4 py-4">
