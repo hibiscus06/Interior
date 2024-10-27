@@ -31,10 +31,6 @@ import img143 from "../../assets/designs/143.png";
 import img144 from "../../assets/designs/144.png";
 import img151 from "../../assets/designs/151.png";
 import img161 from "../../assets/designs/161.png";
-import img171 from "../../assets/designs/171.png";
-import img172 from "../../assets/designs/172.png";
-import img173 from "../../assets/designs/173.png";
-import img174 from "../../assets/designs/174.png";
 import { Carousel } from "@material-tailwind/react";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
@@ -111,10 +107,6 @@ const Designs = () => {
       name: "TERRACE DESIGNS WITH ALL PLANTS AND LIGHTS FOR NIGHT",
       img: [img161],
     },
-    {
-      name: "Some Office interior designs",
-      img: [img171, img172, img173, img174],
-    },
   ];
 
   // Calculate the total number of pages
@@ -166,23 +158,36 @@ const Designs = () => {
             {/* Dropdown options */}
             {dropDown && (
               <ul className="absolute bg-white text-gray-800 border-2 border-orange-800 rounded-lg mt-[0.5rem] shadow-lg z-10">
-                <Link to="design/dining">
+                <Link to="/design/dining">
                   <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
                     Dining
                   </li>
                 </Link>
-                <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
-                  Living Room
-                </li>
-                <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
-                  Ceiling
-                </li>
-                <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
-                  Bedroom
-                </li>
-                <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
-                  Kitchen
-                </li>
+                <Link to="/design/living">
+                  <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
+                    Living Room
+                  </li>
+                </Link>
+                <Link to="/design/office">
+                  <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
+                    Office
+                  </li>
+                </Link>
+                <Link to="/design/bedroom">
+                  <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
+                    Bedroom
+                  </li>
+                </Link>
+                <Link to="/design/kitchen">
+                  <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
+                    Kitchen
+                  </li>
+                </Link>
+                <Link to="/design/washroom">
+                  <li className="px-4 py-2 hover:bg-orange-200 cursor-pointer">
+                    Washroom
+                  </li>
+                </Link>
               </ul>
             )}
           </div>

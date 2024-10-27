@@ -6,6 +6,7 @@ import About from "./components/about/About.jsx";
 import Projects from "./components/projects/Projects.jsx";
 import Contact from "./components/contact/Contact.jsx";
 import Designs from "./components/designs/Designs.jsx";
+import DesignsCategory from "./components/designs/DesignsCategory.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
     element: <Designs />,
   },
   {
-    path: "/designs/:category",
+    path: "/design/:category",
     element: <DesignsCategory />,
   },
 ]);

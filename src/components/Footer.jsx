@@ -21,7 +21,10 @@ const Footer = () => {
           <div className="flex flex-col items-center justify-center gap-y-[1rem]">
             <div>
               <p className="text-white text-[1.2rem] hover:text-orange-400">
-                +919891237296 | +919319068347
+                +919891237296
+              </p>
+              <p className="text-white text-[1.2rem] hover:text-orange-400">
+                +919319068347
               </p>
               <p className="text-white text-center text-[1.2rem] hover:text-orange-400">
                 aurainterior310@gmail.com

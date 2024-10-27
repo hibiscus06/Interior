@@ -2,7 +2,7 @@ import { Carousel, Typography, IconButton } from "@material-tailwind/react";
 import React, { useState } from "react";
 import img1 from "../../assets/bedroom.jpeg";
 import img2 from "../../assets/bedroom1.jpeg";
-import office from "../../assets/designs/172.png";
+import office from "../../assets/office/172.png";
 import space from "../../assets/designs/161.png";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
